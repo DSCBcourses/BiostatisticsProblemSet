@@ -1,0 +1,72 @@
+---
+title: "Problem Set 1"
+output: html_notebook
+---
+
+FirstName LastName
+Date
+Problem Set 1
+
+```{r}
+#Load tidyverse suite of packages
+
+
+#Load CellDiff.csv as a dataframe using the read.csv command
+
+```
+
+```{r}
+#Inspect data using the View, head, str, and class functions
+
+```
+```{r}
+#make the data tidy and store the values in a new dataframe, called CellDiff.tidy.  The new columns created in this process should be called Antibody and PercentPositive
+
+```
+
+```{r}
+#Calculate the mean, median and standard deviation of all the values in the PercentPositive column
+
+```
+
+```{r}
+#Create a histogram of the PercentPositive values for the FOXA2pos antibody (hint: use the filter function and create a new object)
+
+```
+
+```{r}
+# Use the summarize and group_by functions with pipes (%>%) to get the mean and standard deviation of the data when grouped by BOTH antibody type and condition.  Store the results in a new dataframe called CellDiff.summary
+
+
+# Looking at the mean values for each condition and antibody, which condition produces the best result?  Below, we will formally test whether this preliminary assessment is statistically significant.  For now, just base your answer on the values of the means.
+
+
+```
+
+```{r}
+# Calculate the adjusted r2 and p-value from a linear regression between the percent differentiation of the two markers (hint:  use the original CellDiff object, not CellDiff.tidy).  
+
+
+
+# Are the markers well-correlated?  Based on these results, do you think it is important to continue using both markers?
+
+```
+
+```{r}
+# Plot the results and use the pdf() function to save the results to your Results folder.  Don't forget to add dev.off() at the end!
+
+```
+
+
+```{r}
+# Use ANOVA and TukeyHSD to determine which condition(s) produce significant increases in FOXA2 cells
+
+```
+```{r}
+# Repeat this analysis for teh NKX marker
+
+```
+
+
+Taking into account both your preliminary conclusion from looking at the values of the means and the outputs of this hypothesis testing, which condition produces the best results? 
+
